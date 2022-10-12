@@ -21,21 +21,6 @@ public abstract class Entity implements Movement, Script {
         position.setXY(x, y);
     }
 
-    public void moveUp() {
-        position.setY(position.getY() + 1);
-    }
-
-    public void moveDown() {
-        position.setY(position.getY() - 1);
-    }
-
-    public void moveLeft() {
-        position.setX(position.getX() - 1);
-    }
-
-    public void moveRight() {
-        position.setX(position.getX() + 1);
-    }
-
+    public abstract Position move();
     public abstract void triggerScript();
 }
