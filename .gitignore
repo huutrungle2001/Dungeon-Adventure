@@ -3,3 +3,4 @@ lib
 *.class
 .vscode
 *.vscode
+*.cmd
